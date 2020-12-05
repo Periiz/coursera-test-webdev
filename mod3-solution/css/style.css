@@ -5,3 +5,19 @@ prefixes, i.e., md, sm, and xs.
 - Desktop mockup illustration should correspond to Bootstrap md-based classes
 - Tablet mockup illustration should correspond to Bootstrap sm-based classes
 - Mobile mockup illustration should correspond to Bootstrap xs-based classes */
+
+/* col-sm é min 768px */
+/* col-md é min 992px */
+/* col-lg é min 1200px */
+
+@media (min-width: 768px) { .only-mobile { display: none !important; } }
+
+body {
+  background-color: darkred;
+  color: white;
+}
+
+#header-nav {
+  border-radius: 0;
+  border: 0;
+}
