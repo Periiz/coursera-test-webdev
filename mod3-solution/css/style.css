@@ -6,11 +6,9 @@ prefixes, i.e., md, sm, and xs.
 - Tablet mockup illustration should correspond to Bootstrap sm-based classes
 - Mobile mockup illustration should correspond to Bootstrap xs-based classes */
 
-/* col-sm é min 768px */
-/* col-md é min 992px */
-/* col-lg é min 1200px */
-
-@media (min-width: 768px) { .only-mobile { display: none !important; } }
+/* col-xs é min 768px */
+/* col-sm é min 992px */
+/* col-md é min 1200px */
 
 body {
   background-color: darkred;
@@ -20,4 +18,57 @@ body {
 #header-nav {
   border-radius: 0;
   border: 0;
+}
+
+@media (max-width: 767px) {
+  #collapsable-navbar {
+    background-color: #c4c4c4;
+    text-align: right;
+  }
+}
+
+#main-container {
+  height: 2000px;
+}
+
+.text-box {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 5px 25px 65px;
+  color: black;
+  background-color: #c4c4c4;
+}
+
+@media (max-width: 767px) {
+  .text-box {
+    margin: 15px 15% 40px;
+  }
+}
+
+a .back-to-top {
+  text-decoration: none;
+  color: black;
+}
+
+a .back-to-top :active { color: #555 }
+
+span.back-to-top {
+  position: absolute;
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color: greenyellow;
+  margin: 10px 2px 2px;
+  padding: 5px;
+  right: 23px;
+  bottom: 15px;
+}
+
+span.back-to-top:hover {
+  border-color: rgb(1, 77, 1);
+  background-color: rgb(127, 189, 34);
+}
+
+span.back-to-top:active {
+  border-color: rgb(34, 85, 34);
+  background-color: rgb(111, 136, 73);
 }
