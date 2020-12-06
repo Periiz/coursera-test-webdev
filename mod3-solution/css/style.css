@@ -23,7 +23,7 @@ body {
 @media (max-width: 767px) {
   #collapsable-navbar {
     background-color: #c4c4c4;
-    text-align: right;
+    text-align: center;
   }
 }
 
